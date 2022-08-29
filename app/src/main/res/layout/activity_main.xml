@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每间隔  "
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"/>
+
+        <NumberPicker
+            android:id="@+id/pickerMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 分钟提醒"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对齐时间开始 "
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下个提醒时间: "/>
+        <TextView
+            android:id="@+id/txtNextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未开始"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>
